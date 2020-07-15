@@ -1,0 +1,71 @@
+.banner {
+    width: 100%;
+    height: 400px;
+    position: relative;
+}
+
+.siximg {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    position: absolute;
+}
+
+.siximg a {
+    float: left;
+    width: 100%;
+    height: 100%;
+}
+
+.siximg .img1 {
+    background: url(imgs/1.jpg) center center no-repeat;
+    display: block;
+}
+
+.siximg .img2 {
+    background: url(imgs/2.jpg) center center no-repeat;
+    display: none;
+}
+
+.siximg .img3 {
+    background: url(imgs/3.jpg) center center no-repeat;
+    display: none;
+}
+
+.siximg .img4 {
+    background: url(imgs/4.jpg) center center no-repeat;
+    display: none;
+}
+
+.siximg .img5 {
+    background: url(imgs/5.jpg) center center no-repeat;
+    display: none;
+}
+
+.siximg .img6 {
+    background: url(imgs/6.jpg) center center no-repeat;
+    display: none;
+}
+
+.navigation {
+    width: 100%;
+    height: 15px;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.butto {
+    width: 60px;
+    height: 2px;
+    background: rgba(255, 255, 255, 1);
+    line-height: 15px;
+    opacity: .5;
+    margin: 0 5px;
+}

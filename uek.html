@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="uek.css">
+</head>
+
+<body>
+    <div class="banner">
+        <div class="siximg">
+            <a href="#" class="img1"></a>
+            <a href="#" class="img2"></a>
+            <a href="#" class="img3"></a>
+            <a href="#" class="img4"></a>
+            <a href="#" class="img5"></a>
+            <a href="#" class="img6"></a>
+        </div>
+        <div class="navigation">
+            <span class="butto" style="background:#007aff"></span>
+            <span class="butto"></span>
+            <span class="butto"></span>
+            <span class="butto"></span>
+            <span class="butto"></span>
+            <span class="butto"></span>
+        </div>
+    </div>
+</body>
+
+<script>
+    var a = document.querySelectorAll(".siximg a");
+    console.log(a[0]);
+    var but = document.querySelectorAll(".butto");
+    console.log(but);
+    var num = 0;
+    var t = setInterval(() => {
+        num++;
+        if (num > but.length - 1) {
+            num = -1;
+        } else {
+            for (var y = 0; y < but.length; y++) {
+                but[y].style.background = "rgba(255,255,255,1)";
+                a[y].style.display = "none";
+            }
+            but[num].style.background = "#007aff";
+            a[num].style.display = "block";
+        }
+    }, 3000);
+
+
+
+
+
+
+
+
+    for (let i = 0; i < but.length; i++) {
+        but[i].onclick = function() {
+            for (var y = 0; y < but.length; y++) {
+                but[y].style.background = "rgba(255,255,255,1)";
+                a[y].style.display = "none";
+            }
+            this.style.background = "#007aff";
+            a[i].style.display = "block";
+            num = i;
+        }
+    }
+</script>
+
+</html>
